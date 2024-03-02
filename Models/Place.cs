@@ -6,27 +6,13 @@ using System.Threading.Tasks;
 
 namespace Interactive_Event_Maps.Models
 {
-	public class Place
+	public class Place(int id, string name, string description, double x, double y, List<Activity>? activities)
 	{
-		private int id;
-		private string name;
-		private string description;
-		private Position position;
-		private List<Activity> activities;
-		
-		public Place(int id, string name, string description, double x, double y, List<Activity>? activities)
-		{
-			this.Id = id;
-			this.Name = name;	
-			this.Description = description;
-			this.Position = new Position(x, y);
-			this.activities = activities ?? [];
-		}
+		public int Id { get; set; } = id;
+		public string Name { get; set; } = name;
+		public string Description { get; set; } = description;
+		public Position Position { get; set; } = new Position(x, y);
+		public List<Activity> Activities { get; set; } = activities ?? [];
 
-		public int Id { get => id; set => id = value; }
-		public string Name { get => name; set => name = value; }
-		public string Description { get => description; set => description = value; }
-		public Position Position { get => position; set => position = value; }
-		public List<Activity> Activities { get => activities; set => activities = value; }
 	}
 }

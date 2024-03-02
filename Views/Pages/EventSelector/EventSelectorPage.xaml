@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Interactive_Event_Maps.Views.Pages.EventSelectorPage"
+             Title="Inicio">
+    <VerticalStackLayout>
+            <ScrollView>
+                <CollectionView 
+                    x:Name="AvailableEventCollection"
+                    ItemsSource="{Binding SelectableElements}" 
+                    SelectionMode="Single"
+                    SelectionChangedCommand="{Binding SelectCommand}"
+                    SelectionChangedCommandParameter="{Binding SelectedItem.Name, Source={x:Reference AvailableEventCollection}}">
+                    
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Padding="10,5,10,5">
+                            <Frame InputTransparent="True">
+                                <Image IsEnabled="{Binding IsLogoAvailable}" Source="{Binding Logo}"/>
+                                <Label IsEnabled="{Binding IsNameExposed}" Text="{Binding FormattedName}" FontSize="18" Padding="20" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            </Frame>
+                                
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </ScrollView>
+        </VerticalStackLayout>
+
+    
+</ContentPage>
