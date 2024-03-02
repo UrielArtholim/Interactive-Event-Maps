@@ -8,9 +8,9 @@ namespace Interactive_Event_Maps.Models
 {
 	public class Activity
 	{
-		private string name;
-		private string description;
-		private DateTime time;
+		public string Name { get; set; }
+		public string Description { get; set; }
+		public DateTime Time { get; set; }
 
 		public Activity(string name, string description, string time)
 		{
@@ -18,9 +18,5 @@ namespace Interactive_Event_Maps.Models
 			this.Description = description;
 			this.Time = DateTime.Parse(time);
 		}
-
-		public string Name { get => name; set => name = value; }
-		public string Description { get => description; set => description = value; }
-		public DateTime Time { get => time; set => time = value; }
 	}
 }

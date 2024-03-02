@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace Interactive_Event_Maps.Models
 {
-	public class Position(double x, double y)
+	public class Event: SelectableEvent
 	{
-		public double X { get; set; } = x;
-		public double Y { get; set; } = y;
+		public Event() : base()
+		{
 
+		}
+
+		public Event(string name): base(name)
+		{
+
+		}
 	}
 }
