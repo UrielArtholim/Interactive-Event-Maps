@@ -1,0 +1,210 @@
+{
+    "id": 1,
+    "name": "La Tertulia",
+    "position": {
+        "x": 130,
+        "y": 130
+    },
+    "calendar": [
+        {
+            "day": "2024-05-04",
+            "activities": [
+                {
+                    "name": "Actividad 1",
+                    "startTime": "10:00",
+                    "endTime": "11:00"
+                },
+                {
+                    "name": "Actividad 2",
+                    "startTime": "11:00",
+                    "endTime": "13:00"
+                },
+                {
+                    "name": "Actividad 3",
+                    "startTime": "13:00",
+                    "endTime": "16:00"
+                },
+                {
+                    "name": "Actividad 4",
+                    "startTime": "16:00",
+                    "endTime": "20:00"
+                }
+            ]
+        },
+        {
+            "day": "2024-05-05",
+            "activities": [
+                {
+                    "name": "Actividad 1",
+                    "startTime": "10:00",
+                    "endTime": "11:00"
+                },
+                {
+                    "name": "Actividad 2",
+                    "startTime": "11:00",
+                    "endTime": "13:00"
+                },
+                {
+                    "name": "Actividad 3",
+                    "startTime": "13:00",
+                    "endTime": "16:00"
+                },
+                {
+                    "name": "Actividad 4",
+                    "startTime": "16:00",
+                    "endTime": "20:00"
+                }
+            ]
+        },
+        {
+            "day": "2024-05-06",
+            "activities": [
+                {
+                    "name": "Actividad 1",
+                    "startTime": "10:00",
+                    "endTime": "11:00"
+                },
+                {
+                    "name": "Actividad 2",
+                    "startTime": "11:00",
+                    "endTime": "13:00"
+                },
+                {
+                    "name": "Actividad 3",
+                    "startTime": "13:00",
+                    "endTime": "16:00"
+                },
+                {
+                    "name": "Actividad 4",
+                    "startTime": "16:00",
+                    "endTime": "20:00"
+                }
+            ]
+        },
+        {
+            "day": "2024-05-07",
+            "activities": [
+                {
+                    "name": "Actividad 1",
+                    "startTime": "10:00",
+                    "endTime": "11:00"
+                },
+                {
+                    "name": "Actividad 2",
+                    "startTime": "11:00",
+                    "endTime": "13:00"
+                },
+                {
+                    "name": "Actividad 3",
+                    "startTime": "13:00",
+                    "endTime": "16:00"
+                },
+                {
+                    "name": "Actividad 4",
+                    "startTime": "16:00",
+                    "endTime": "20:00"
+                }
+            ]
+        },
+        {
+            "day": "2024-05-08",
+            "activities": [
+                {
+                    "name": "Actividad 1",
+                    "startTime": "10:00",
+                    "endTime": "11:00"
+                },
+                {
+                    "name": "Actividad 2",
+                    "startTime": "11:00",
+                    "endTime": "13:00"
+                },
+                {
+                    "name": "Actividad 3",
+                    "startTime": "13:00",
+                    "endTime": "16:00"
+                },
+                {
+                    "name": "Actividad 4",
+                    "startTime": "16:00",
+                    "endTime": "20:00"
+                }
+            ]
+        },
+        {
+            "day": "2024-05-09",
+            "activities": [
+                {
+                    "name": "Actividad 1",
+                    "startTime": "10:00",
+                    "endTime": "11:00"
+                },
+                {
+                    "name": "Actividad 2",
+                    "startTime": "11:00",
+                    "endTime": "13:00"
+                },
+                {
+                    "name": "Actividad 3",
+                    "startTime": "13:00",
+                    "endTime": "16:00"
+                },
+                {
+                    "name": "Actividad 4",
+                    "startTime": "16:00",
+                    "endTime": "20:00"
+                }
+            ]
+        },
+        {
+            "day": "2024-05-10",
+            "activities": [
+                {
+                    "name": "Actividad 1",
+                    "startTime": "10:00",
+                    "endTime": "11:00"
+                },
+                {
+                    "name": "Actividad 2",
+                    "startTime": "11:00",
+                    "endTime": "13:00"
+                },
+                {
+                    "name": "Actividad 3",
+                    "startTime": "13:00",
+                    "endTime": "16:00"
+                },
+                {
+                    "name": "Actividad 4",
+                    "startTime": "16:00",
+                    "endTime": "20:00"
+                }
+            ]
+        },
+        {
+            "day": "2024-05-11",
+            "activities": [
+                {
+                    "name": "Actividad 1",
+                    "startTime": "10:00",
+                    "endTime": "11:00"
+                },
+                {
+                    "name": "Actividad 2",
+                    "startTime": "11:00",
+                    "endTime": "13:00"
+                },
+                {
+                    "name": "Actividad 3",
+                    "startTime": "13:00",
+                    "endTime": "16:00"
+                },
+                {
+                    "name": "Actividad 4",
+                    "startTime": "16:00",
+                    "endTime": "20:00"
+                }
+            ]
+        }
+    ]
+}
