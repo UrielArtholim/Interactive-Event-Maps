@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+﻿using System.Text.Json.Serialization;
 
 namespace Interactive_Event_Maps.Models
 {
 	public class RepositoryDirectory
 	{
 		[JsonConstructor]
-		public RepositoryDirectory() 
-		{ 
+		public RepositoryDirectory()
+		{
 			Name = String.Empty;
 			Path = String.Empty;
 			Sha = String.Empty;
@@ -26,7 +21,7 @@ namespace Interactive_Event_Maps.Models
 
 		public RepositoryDirectory(string name, string path, string sha, double size, string url, string html_url, string git_url,
 			string download_url, string type, string self, string git, string html)
-		{ 
+		{
 			this.Name = name;
 			this.Path = path;
 			this.Sha = sha;
@@ -49,5 +44,5 @@ namespace Interactive_Event_Maps.Models
 		public string Download_url { get; set; }
 		public string Type { get; set; }
 		public Links _Links { get; set; }
-	}	
+	}
 }

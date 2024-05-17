@@ -1,34 +1,38 @@
-﻿using Interactive_Event_Maps.Models;
-using Interactive_Event_Maps.Services.File;
-using Interactive_Event_Maps.Services.Github;
-using System.Text.Json;
+﻿using Interactive_Event_Maps.Helpers.Service;
+using Interactive_Event_Maps.Models;
+using Interactive_Event_Maps.Services.Files;
+using Interactive_Event_Maps.Services.GitHub;
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Interactive_Event_Maps.Services.Event
 {
-	public partial class EventService : IEventService
+	public class EventService: IEventService
 	{
-		private readonly IGitHubService gitHubService;
-		private readonly IFileService fileService;
-		
+		private IGitHubService github;
 
-		public EventService(IGitHubService gitHubService, IFileService fileService)
+		public EventService() 
 		{
-			this.gitHubService = gitHubService;
-			this.fileService = fileService;
+			this.github = ServiceHelper.GetService<IGitHubService>() ?? throw new Exception("Service not available: IGitHubService");
 		}
 
-		public async Task<List<SelectableEvent>> GetAvailableEventsAsync()
+		public async Task<ObservableCollection<EventInformation>> GetAvailableEventsAsync()
 		{
-			List<SelectableEvent> events = [];
-			string endpoint = baseUri + "contents/Events";
-			string? data = await this.gitHubService.SendTextAPIRequestAsync(endpoint, null, false);
-			if(data != null)
+			ObservableCollection<EventInformation> events = new ObservableCollection<EventInformation>();
+			if (!github.IsAuthenticated())
 			{
-				events = GetEventsFromJson(data);
-			}			
-			return events;
-		}		
-
-		
+				await MainThread.InvokeOnMainThreadAsync(github.AuthenticateAsync);
+			}
+			List<string> eventList = await MainThread.InvokeOnMainThreadAsync(github.GetAvailableEventsAsync);
+			foreach(string name in eventList)
+			{
+				events.Add(new EventInformation(name));
+			}
+			return events; 
+		}
 	}
 }

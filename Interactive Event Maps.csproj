@@ -36,6 +36,7 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+		<UserSecretsId>78b827f1-b35c-45b7-8390-d7235578a1f6</UserSecretsId>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -57,38 +58,90 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Remove="Maps\01-feria-jerez\**" />
-	  <EmbeddedResource Remove="Maps\01-feria-jerez\**" />
-	  <MauiCss Remove="Maps\01-feria-jerez\**" />
-	  <MauiXaml Remove="Maps\01-feria-jerez\**" />
-	  <None Remove="Maps\01-feria-jerez\**" />
+	  <Compile Remove="Events\01-feria-jerez\**" />
+	  <EmbeddedResource Remove="Events\**" />
+	  <MauiCss Remove="Events\**" />
+	  <MauiXaml Remove="Events\**" />
+	  <None Remove="Events\**" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
-		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
+	  <MauiAsset Remove="Resources\Raw\ghsettings.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="environment.settings.json" />
+	  <None Remove="Resources\Raw\ghsettings.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="environment.settings.json">
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Maui" Version="7.0.1" />
+		<PackageReference Include="HtmlAgilityPack" Version="1.11.60" />
+		<PackageReference Include="Microsoft.AspNet.Mvc" Version="5.3.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="8.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="8.0.0" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.14" />
+		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.14" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
-		<PackageReference Include="Microsoft.Maui.Controls.Maps" Version="8.0.3" />
-		<PackageReference Include="Microsoft.Maui.Maps" Version="8.0.3" />
+		<PackageReference Include="Microsoft.Maui.Controls.Maps" Version="8.0.14" />
+		<PackageReference Include="Microsoft.Maui.Maps" Version="8.0.14" />
+		<PackageReference Include="Octokit" Version="10.0.0" />
+		<PackageReference Include="Plugin.LocalNotification" Version="11.1.1" />
+		<PackageReference Include="System.Reflection" Version="4.3.0" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="MainPage.xaml">
+	  <MauiXaml Update="Views\Pages\EventTabbedPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Pages\EventPage\EventPage.xaml">
+	  <MauiXaml Update="Views\Pages\HomePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Pages\EventSelector\EventSelectorPage.xaml">
+	  <MauiXaml Update="Views\Pages\EventMapPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\Pages\EventSelectorPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Pages\LocationCalendarPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Pages\LocationMapPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Pages\LocationSelectorPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Pages\LocationTabPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+	<ProjectExtensions><VisualStudio><UserProperties environment_1settings_1json__JsonSchema="" XamarinHotReloadDebuggerTimeoutExceptionInteractiveEventMapsHideInfoBar="True" /></VisualStudio></ProjectExtensions>
+
+	<ItemGroup>
+	  <Compile Update="Views\Pages\EventTabbedPage.xaml.cs">
+	    <DependentUpon>EventTabbedPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Pages\HomePage.xaml.cs">
+	    <DependentUpon>HomePage.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="ViewModels\Controllers\" />
-	  <Folder Include="Views\Controllers\" />
+	  <PackageReference Update="Microsoft.Maui.Essentials" Version="8.0.14" />
 	</ItemGroup>
 
-	<ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadDebuggerTimeoutExceptionInteractiveEventMapsHideInfoBar="True" /></VisualStudio></ProjectExtensions>
+	<ItemGroup>
+	  <Folder Include="Services\Map\" />
+	  <Folder Include="ViewModels\Controller\" />
+	</ItemGroup>
 
 </Project>

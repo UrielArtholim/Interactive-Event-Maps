@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Interactive_Event_Maps.Models;
+using Octokit;
 
-namespace Interactive_Event_Maps.Services.Github
+namespace Interactive_Event_Maps.Services.GitHub
 {
 	public interface IGitHubService
 	{
-		public Task<string?> SendTextAPIRequestAsync(string endpoint, string? body = null, bool isNewItem = false);
-		public Task<byte[]?> SendFileAPIRequestAsync(string endpoint, string? body = null, bool isNewItem = false);
+		public bool IsAuthenticated();
+		public Task AuthenticateAsync();
+		public Task<List<string>> GetAvailableEventsAsync();
 	}
 }

@@ -1,22 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Interactive_Event_Maps.Models
+﻿namespace Interactive_Event_Maps.Models
 {
 	public class Activity
 	{
 		public string Name { get; set; }
-		public string Description { get; set; }
-		public DateTime Time { get; set; }
+		public string? Description { get; set; }
+		public DateTime StartTime{ get; set; }
+		public DateTime EndTime { get; set; }
 
-		public Activity(string name, string description, string time)
+		public Activity(string name, string start, string end, string? description)
 		{
 			this.Name = name;
 			this.Description = description;
-			this.Time = DateTime.Parse(time);
+			this.StartTime = DateTime.Parse(start);
+			this.EndTime = DateTime.Parse(end);
 		}
 	}
 }

@@ -7,7 +7,6 @@ namespace Interactive_Event_Maps
 		public AppShell()
 		{
 			InitializeComponent();
-			Routing.RegisterRoute(nameof(EventSelectorPage), typeof(EventSelectorPage));
 		}
 	}
 }

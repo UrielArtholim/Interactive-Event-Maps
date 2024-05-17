@@ -1,4 +1,7 @@
-﻿using Microsoft.Maui.Controls;
+﻿using Interactive_Event_Maps.Helpers.Service;
+using Interactive_Event_Maps.ViewModels.Base;
+using Microsoft.Maui.Controls;
+using Microsoft.Maui.Controls.Internals;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,46 +12,34 @@ namespace Interactive_Event_Maps.Services.Navigation
 {
 	public class NavigationService : INavigationService
 	{
+		public NavigationService() { }
+
+
+		public async Task PushAsync(ContentPage contentPage, bool isBackAllowed = false)
+		{
+			await Application.Current?.MainPage.Navigation.PushAsync(contentPage);
+			if (!isBackAllowed)
+			{
+				await PopToRootAsync();
+				await Application.Current?.MainPage.Navigation.PushAsync(contentPage);
+			}
+
+		}
+
 		public async Task PopAsync()
 		{
-			if(Shell.Current.Navigation.NavigationStack.Count > 0) 
-			{
-				await MainThread.InvokeOnMainThreadAsync(async () => await Shell.Current.Navigation.PopAsync());
-			}
+			await Application.Current?.MainPage.Navigation.PopAsync();
 		}
 
-		public async Task PopModalAsync()
+		public async Task PopToRootAsync()
 		{
-			if (Shell.Current.Navigation.ModalStack.Count > 0)
-			{
-				await MainThread.InvokeOnMainThreadAsync(async () => await Shell.Current.Navigation.PopModalAsync());
-			}
+			await Application.Current.MainPage.Navigation.PopToRootAsync();
 		}
 
-		public async Task PushAsync(ContentPage contentPage, bool allowReturn = false)
+		public void SetMainPage(Page page)
 		{
-			if(!allowReturn)
-			{
-				NavigationService.CleanNavigationStack();
-			}
-			await MainThread.InvokeOnMainThreadAsync(async () => await Shell.Current.Navigation.PushAsync(new NavigationPage(contentPage)));
+			Application.Current.MainPage = page;	
 		}
-
-		public async Task PushModalAsync(ContentPage contentPage)
-		{
-			while(Shell.Current.Navigation.ModalStack.Count > 0)
-			{
-				await this.PopModalAsync();
-			}
-			await MainThread.InvokeOnMainThreadAsync(async () => await Shell.Current.Navigation.PushModalAsync(contentPage));
-		}
-
-		private static void CleanNavigationStack()
-		{
-			while (Shell.Current.Navigation.NavigationStack.Count > 0)
-			{
-				Shell.Current.Navigation.RemovePage(Shell.Current.Navigation.NavigationStack.Last());
-			}
-		}
+		
 	}
 }
