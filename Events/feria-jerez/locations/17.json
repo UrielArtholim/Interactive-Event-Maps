@@ -1,5 +1,5 @@
 {
-    "id": "17",
+    "id": "locationId",
     "name": "Las Duelas",
     "access": "Paseo de las Palmeras",
     "calendar": [
@@ -7,22 +7,22 @@
             "date": "2024-05-04",
             "activities": [
                 {
-                    "name": "Activ14ad 1",
+                    "name": "Actividad 1",
                     "startTime": "10:00",
                     "endTime": "11:00"
                 },
                 {
-                    "name": "Activ14ad 2",
+                    "name": "Actividad 2",
                     "startTime": "11:00",
                     "endTime": "13:00"
                 },
                 {
-                    "name": "Activ14ad 3",
+                    "name": "Actividad 3",
                     "startTime": "13:00",
                     "endTime": "16:00"
                 },
                 {
-                    "name": "Activ14ad 4",
+                    "name": "Actividad 4",
                     "startTime": "16:00",
                     "endTime": "20:00"
                 }
@@ -32,22 +32,22 @@
             "date": "2024-05-05",
             "activities": [
                 {
-                    "name": "Activ14ad 1",
+                    "name": "Actividad 1",
                     "startTime": "10:00",
                     "endTime": "11:00"
                 },
                 {
-                    "name": "Activ14ad 2",
+                    "name": "Actividad 2",
                     "startTime": "11:00",
                     "endTime": "13:00"
                 },
                 {
-                    "name": "Activ14ad 3",
+                    "name": "Actividad 3",
                     "startTime": "13:00",
                     "endTime": "16:00"
                 },
                 {
-                    "name": "Activ14ad 4",
+                    "name": "Actividad 4",
                     "startTime": "16:00",
                     "endTime": "20:00"
                 }
@@ -57,22 +57,22 @@
             "date": "2024-05-06",
             "activities": [
                 {
-                    "name": "Activ14ad 1",
+                    "name": "Actividad 1",
                     "startTime": "10:00",
                     "endTime": "11:00"
                 },
                 {
-                    "name": "Activ14ad 2",
+                    "name": "Actividad 2",
                     "startTime": "11:00",
                     "endTime": "13:00"
                 },
                 {
-                    "name": "Activ14ad 3",
+                    "name": "Actividad 3",
                     "startTime": "13:00",
                     "endTime": "16:00"
                 },
                 {
-                    "name": "Activ14ad 4",
+                    "name": "Actividad 4",
                     "startTime": "16:00",
                     "endTime": "20:00"
                 }
@@ -82,22 +82,22 @@
             "date": "2024-05-07",
             "activities": [
                 {
-                    "name": "Activ14ad 1",
+                    "name": "Actividad 1",
                     "startTime": "10:00",
                     "endTime": "11:00"
                 },
                 {
-                    "name": "Activ14ad 2",
+                    "name": "Actividad 2",
                     "startTime": "11:00",
                     "endTime": "13:00"
                 },
                 {
-                    "name": "Activ14ad 3",
+                    "name": "Actividad 3",
                     "startTime": "13:00",
                     "endTime": "16:00"
                 },
                 {
-                    "name": "Activ14ad 4",
+                    "name": "Actividad 4",
                     "startTime": "16:00",
                     "endTime": "20:00"
                 }
@@ -107,22 +107,22 @@
             "date": "2024-05-08",
             "activities": [
                 {
-                    "name": "Activ14ad 1",
+                    "name": "Actividad 1",
                     "startTime": "10:00",
                     "endTime": "11:00"
                 },
                 {
-                    "name": "Activ14ad 2",
+                    "name": "Actividad 2",
                     "startTime": "11:00",
                     "endTime": "13:00"
                 },
                 {
-                    "name": "Activ14ad 3",
+                    "name": "Actividad 3",
                     "startTime": "13:00",
                     "endTime": "16:00"
                 },
                 {
-                    "name": "Activ14ad 4",
+                    "name": "Actividad 4",
                     "startTime": "16:00",
                     "endTime": "20:00"
                 }
@@ -132,22 +132,22 @@
             "date": "2024-05-09",
             "activities": [
                 {
-                    "name": "Activ14ad 1",
+                    "name": "Actividad 1",
                     "startTime": "10:00",
                     "endTime": "11:00"
                 },
                 {
-                    "name": "Activ14ad 2",
+                    "name": "Actividad 2",
                     "startTime": "11:00",
                     "endTime": "13:00"
                 },
                 {
-                    "name": "Activ14ad 3",
+                    "name": "Actividad 3",
                     "startTime": "13:00",
                     "endTime": "16:00"
                 },
                 {
-                    "name": "Activ14ad 4",
+                    "name": "Actividad 4",
                     "startTime": "16:00",
                     "endTime": "20:00"
                 }
@@ -157,22 +157,22 @@
             "date": "2024-05-10",
             "activities": [
                 {
-                    "name": "Activ14ad 1",
+                    "name": "Actividad 1",
                     "startTime": "10:00",
                     "endTime": "11:00"
                 },
                 {
-                    "name": "Activ14ad 2",
+                    "name": "Actividad 2",
                     "startTime": "11:00",
                     "endTime": "13:00"
                 },
                 {
-                    "name": "Activ14ad 3",
+                    "name": "Actividad 3",
                     "startTime": "13:00",
                     "endTime": "16:00"
                 },
                 {
-                    "name": "Activ14ad 4",
+                    "name": "Actividad 4",
                     "startTime": "16:00",
                     "endTime": "20:00"
                 }
@@ -182,22 +182,22 @@
             "date": "2024-05-11",
             "activities": [
                 {
-                    "name": "Activ14ad 1",
+                    "name": "Actividad 1",
                     "startTime": "10:00",
                     "endTime": "11:00"
                 },
                 {
-                    "name": "Activ14ad 2",
+                    "name": "Actividad 2",
                     "startTime": "11:00",
                     "endTime": "13:00"
                 },
                 {
-                    "name": "Activ14ad 3",
+                    "name": "Actividad 3",
                     "startTime": "13:00",
                     "endTime": "16:00"
                 },
                 {
-                    "name": "Activ14ad 4",
+                    "name": "Actividad 4",
                     "startTime": "16:00",
                     "endTime": "20:00"
                 }
