@@ -12,7 +12,7 @@
                     "activityEndTime": "11:00"
                 },
                 {
-                    "activityId": "Actividad 2",
+                    "activityName": "Actividad 2",
                     "activityStartTime": "11:00",
                     "activityEndTime": "13:00"
                 },
