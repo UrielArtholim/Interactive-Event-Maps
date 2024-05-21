@@ -7,24 +7,24 @@
             "date": "2024-05-04",
             "activities": [
                 {
-                    "name": "Actividad 1",
-                    "startTime": "10:00",
-                    "endTime": "11:00"
+                    "activityName": "Actividad 1",
+                    "activityStartTime": "10:00",
+                    "activityEndTime": "11:00"
                 },
                 {
-                    "name": "Actividad 2",
-                    "startTime": "11:00",
-                    "endTime": "13:00"
+                    "activityId": "Actividad 2",
+                    "activityStartTime": "11:00",
+                    "activityEndTime": "13:00"
                 },
                 {
-                    "name": "Actividad 3",
-                    "startTime": "13:00",
-                    "endTime": "16:00"
+                    "activityName": "Actividad 3",
+                    "activityStartTime": "13:00",
+                    "activityEndTime": "16:00"
                 },
                 {
-                    "name": "Actividad 4",
-                    "startTime": "16:00",
-                    "endTime": "20:00"
+                    "activityName": "Actividad 4",
+                    "activityStartTime": "16:00",
+                    "activityEndTime": "20:00"
                 }
             ]
         },
@@ -32,24 +32,24 @@
             "date": "2024-05-05",
             "activities": [
                 {
-                    "name": "Actividad 1",
-                    "startTime": "10:00",
-                    "endTime": "11:00"
+                    "activityName": "Actividad 1",
+                    "activityStartTime": "10:00",
+                    "activityEndTime": "11:00"
                 },
                 {
-                    "name": "Actividad 2",
-                    "startTime": "11:00",
-                    "endTime": "13:00"
+                    "activityName": "Actividad 2",
+                    "activityStartTime": "11:00",
+                    "activityEndTime": "13:00"
                 },
                 {
-                    "name": "Actividad 3",
-                    "startTime": "13:00",
-                    "endTime": "16:00"
+                    "activityName": "Actividad 3",
+                    "activityStartTime": "13:00",
+                    "activityEndTime": "16:00"
                 },
                 {
-                    "name": "Actividad 4",
-                    "startTime": "16:00",
-                    "endTime": "20:00"
+                    "activityName": "Actividad 4",
+                    "activityStartTime": "16:00",
+                    "activityEndTime": "20:00"
                 }
             ]
         },
@@ -57,24 +57,24 @@
             "date": "2024-05-06",
             "activities": [
                 {
-                    "name": "Actividad 1",
-                    "startTime": "10:00",
-                    "endTime": "11:00"
+                    "activityName": "Actividad 1",
+                    "activityStartTime": "10:00",
+                    "activityEndTime": "11:00"
                 },
                 {
-                    "name": "Actividad 2",
-                    "startTime": "11:00",
-                    "endTime": "13:00"
+                    "activityName": "Actividad 2",
+                    "activityStartTime": "11:00",
+                    "activityEndTime": "13:00"
                 },
                 {
-                    "name": "Actividad 3",
-                    "startTime": "13:00",
-                    "endTime": "16:00"
+                    "activityName": "Actividad 3",
+                    "activityStartTime": "13:00",
+                    "activityEndTime": "16:00"
                 },
                 {
-                    "name": "Actividad 4",
-                    "startTime": "16:00",
-                    "endTime": "20:00"
+                    "activityName": "Actividad 4",
+                    "activityStartTime": "16:00",
+                    "activityEndTime": "20:00"
                 }
             ]
         },
@@ -82,24 +82,24 @@
             "date": "2024-05-07",
             "activities": [
                 {
-                    "name": "Actividad 1",
-                    "startTime": "10:00",
-                    "endTime": "11:00"
+                    "activityName": "Actividad 1",
+                    "activityStartTime": "10:00",
+                    "activityEndTime": "11:00"
                 },
                 {
-                    "name": "Actividad 2",
-                    "startTime": "11:00",
-                    "endTime": "13:00"
+                    "activityName": "Actividad 2",
+                    "activityStartTime": "11:00",
+                    "activityEndTime": "13:00"
                 },
                 {
-                    "name": "Actividad 3",
-                    "startTime": "13:00",
-                    "endTime": "16:00"
+                    "activityName": "Actividad 3",
+                    "activityStartTime": "13:00",
+                    "activityEndTime": "16:00"
                 },
                 {
-                    "name": "Actividad 4",
-                    "startTime": "16:00",
-                    "endTime": "20:00"
+                    "activityName": "Actividad 4",
+                    "activityStartTime": "16:00",
+                    "activityEndTime": "20:00"
                 }
             ]
         },
@@ -107,24 +107,24 @@
             "date": "2024-05-08",
             "activities": [
                 {
-                    "name": "Actividad 1",
-                    "startTime": "10:00",
-                    "endTime": "11:00"
+                    "activityName": "Actividad 1",
+                    "activityStartTime": "10:00",
+                    "activityEndTime": "11:00"
                 },
                 {
-                    "name": "Actividad 2",
-                    "startTime": "11:00",
-                    "endTime": "13:00"
+                    "activityName": "Actividad 2",
+                    "activityStartTime": "11:00",
+                    "activityEndTime": "13:00"
                 },
                 {
-                    "name": "Actividad 3",
-                    "startTime": "13:00",
-                    "endTime": "16:00"
+                    "activityName": "Actividad 3",
+                    "activityStartTime": "13:00",
+                    "activityEndTime": "16:00"
                 },
                 {
-                    "name": "Actividad 4",
-                    "startTime": "16:00",
-                    "endTime": "20:00"
+                    "activityName": "Actividad 4",
+                    "activityStartTime": "16:00",
+                    "activityEndTime": "20:00"
                 }
             ]
         },
@@ -132,24 +132,24 @@
             "date": "2024-05-09",
             "activities": [
                 {
-                    "name": "Actividad 1",
-                    "startTime": "10:00",
-                    "endTime": "11:00"
+                    "activityName": "Actividad 1",
+                    "activityStartTime": "10:00",
+                    "activityEndTime": "11:00"
                 },
                 {
-                    "name": "Actividad 2",
-                    "startTime": "11:00",
-                    "endTime": "13:00"
+                    "activityName": "Actividad 2",
+                    "activityStartTime": "11:00",
+                    "activityEndTime": "13:00"
                 },
                 {
-                    "name": "Actividad 3",
-                    "startTime": "13:00",
-                    "endTime": "16:00"
+                    "activityName": "Actividad 3",
+                    "activityStartTime": "13:00",
+                    "activityEndTime": "16:00"
                 },
                 {
-                    "name": "Actividad 4",
-                    "startTime": "16:00",
-                    "endTime": "20:00"
+                    "activityName": "Actividad 4",
+                    "activityStartTime": "16:00",
+                    "activityEndTime": "20:00"
                 }
             ]
         },
@@ -157,24 +157,24 @@
             "date": "2024-05-10",
             "activities": [
                 {
-                    "name": "Actividad 1",
-                    "startTime": "10:00",
-                    "endTime": "11:00"
+                    "activityName": "Actividad 1",
+                    "activityStartTime": "10:00",
+                    "activityEndTime": "11:00"
                 },
                 {
-                    "name": "Actividad 2",
-                    "startTime": "11:00",
-                    "endTime": "13:00"
+                    "activityName": "Actividad 2",
+                    "activityStartTime": "11:00",
+                    "activityEndTime": "13:00"
                 },
                 {
-                    "name": "Actividad 3",
-                    "startTime": "13:00",
-                    "endTime": "16:00"
+                    "activityName": "Actividad 3",
+                    "activityStartTime": "13:00",
+                    "activityEndTime": "16:00"
                 },
                 {
-                    "name": "Actividad 4",
-                    "startTime": "16:00",
-                    "endTime": "20:00"
+                    "activityName": "Actividad 4",
+                    "activityStartTime": "16:00",
+                    "activityEndTime": "20:00"
                 }
             ]
         },
@@ -182,24 +182,24 @@
             "date": "2024-05-11",
             "activities": [
                 {
-                    "name": "Actividad 1",
-                    "startTime": "10:00",
-                    "endTime": "11:00"
+                    "activityName": "Actividad 1",
+                    "activityStartTime": "10:00",
+                    "activityEndTime": "11:00"
                 },
                 {
-                    "name": "Actividad 2",
-                    "startTime": "11:00",
-                    "endTime": "13:00"
+                    "activityName": "Actividad 2",
+                    "activityStartTime": "11:00",
+                    "activityEndTime": "13:00"
                 },
                 {
-                    "name": "Actividad 3",
-                    "startTime": "13:00",
-                    "endTime": "16:00"
+                    "activityName": "Actividad 3",
+                    "activityStartTime": "13:00",
+                    "activityEndTime": "16:00"
                 },
                 {
-                    "name": "Actividad 4",
-                    "startTime": "16:00",
-                    "endTime": "20:00"
+                    "activityName": "Actividad 4",
+                    "activityStartTime": "16:00",
+                    "activityEndTime": "20:00"
                 }
             ]
         }
