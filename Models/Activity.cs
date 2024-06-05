@@ -1,4 +1,6 @@
-﻿namespace Interactive_Event_Maps.Models
+﻿using System.Text.Json.Serialization;
+
+namespace Interactive_Event_Maps.Models
 {
 	public class Activity
 	{
@@ -6,7 +8,7 @@
 		public string? Description { get; set; }
 		public DateTime StartTime{ get; set; }
 		public DateTime EndTime { get; set; }
-
+		
 		public Activity(string name, string start, string end, string? description)
 		{
 			this.Name = name;

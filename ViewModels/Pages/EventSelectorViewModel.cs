@@ -16,21 +16,12 @@ namespace Interactive_Event_Maps.ViewModels.Pages
 	public class EventSelectorViewModel: BaseObservableCollectionViewModel<EventInformation>
 	{
 		private IEventService eventService;
-		private string refreshText;
-		public string RefreshText 
-		{
-			get => this.refreshText;
-			set => SetProperty(ref this.refreshText, value);
-		}
 		public ICommand RefreshCommand { get; private set; }
-		public ICommand SelectCommand {  get; private set; }
 		public EventSelectorViewModel() : base()
 		{
 			this.eventService = ServiceHelper.GetService<IEventService>() ?? throw new Exception("Service not available: IEventService");
 			this.Title = "Selección de evento";
-			this.RefreshText = "Cargando eventos disponibles...";
 			this.RefreshCommand = new Command(async () => await UpdateEventCollectionAsync());
-			this.SelectCommand = new Command<EventInformation>(AccessEventInfoAsync);
 			this.IsBusy = true;
 			MainThread.InvokeOnMainThreadAsync(UpdateEventCollectionAsync);
 			this.IsBusy = false;
@@ -39,12 +30,13 @@ namespace Interactive_Event_Maps.ViewModels.Pages
 		private async Task UpdateEventCollectionAsync()
 		{
 			this.Collection = await this.eventService.GetAvailableEventsAsync();
+			Console.WriteLine("Loaded event collection");
 		}
 
-		public void AccessEventInfoAsync(EventInformation selectedEvent)
+		public async Task AccessEventInfoAsync(EventInformation selectedEvent)
 		{
 			Console.WriteLine($"Selected event called {selectedEvent.FormattedName}");
-			App.Navigation.SetMainPage(new EventTabbedPage(selectedEvent));
+			await App.Navigation.PushAsync(new EventMapPage(selectedEvent), true);
 		}
 	}
 }

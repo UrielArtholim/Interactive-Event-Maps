@@ -7,7 +7,6 @@ using Interactive_Event_Maps.Services.GitHub;
 using Interactive_Event_Maps.Services.Location;
 using Interactive_Event_Maps.Services.Navigation;
 using Interactive_Event_Maps.Services.Settings.SettingsService;
-using Interactive_Event_Maps.ViewModels.Base;
 using Interactive_Event_Maps.ViewModels.Pages;
 using Interactive_Event_Maps.Views.Pages;
 using Microsoft.Extensions.Configuration;
@@ -56,7 +55,6 @@ namespace Interactive_Event_Maps
 			mauiAppBuilder.Services.AddSingleton<IEventService, EventService>();
 			mauiAppBuilder.Services.AddSingleton<ILocationService, LocationService>();
 			mauiAppBuilder.Services.AddSingleton<IDataService, DataService>();
-
 			return mauiAppBuilder;
 		}
 

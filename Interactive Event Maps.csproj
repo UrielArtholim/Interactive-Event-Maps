@@ -98,9 +98,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Views\Pages\EventTabbedPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	  <MauiXaml Update="Views\Pages\HomePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -116,10 +113,10 @@
 	  <MauiXaml Update="Views\Pages\LocationMapPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Pages\LocationSelectorPage.xaml">
+	  <MauiXaml Update="Views\Pages\LocationMenuPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Pages\LocationTabPage.xaml">
+	  <MauiXaml Update="Views\Pages\LocationSelectorPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
@@ -127,9 +124,6 @@
 	<ProjectExtensions><VisualStudio><UserProperties environment_1settings_1json__JsonSchema="" XamarinHotReloadDebuggerTimeoutExceptionInteractiveEventMapsHideInfoBar="True" /></VisualStudio></ProjectExtensions>
 
 	<ItemGroup>
-	  <Compile Update="Views\Pages\EventTabbedPage.xaml.cs">
-	    <DependentUpon>EventTabbedPage.xaml</DependentUpon>
-	  </Compile>
 	  <Compile Update="Views\Pages\HomePage.xaml.cs">
 	    <DependentUpon>HomePage.xaml</DependentUpon>
 	  </Compile>
